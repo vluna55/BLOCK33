@@ -71,7 +71,7 @@ app.delete("/api/employees/:id", async (req, res, next) => {
 
 const init = async () => {
   await client.connect();
-  let SQL = `DROP TABLE IF EXISTS notes;
+  let SQL = `
     DROP TABLE IF EXISTS employees;
     DROP TABLE IF EXISTS department;
 
